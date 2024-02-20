@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/s50600822/Notes/actions/workflows/main.yml/badge.svg)](https://github.com/s50600822/jmh_tut/actions)
+[![Build Status](https://github.com/s50600822/jmh_tut/actions/workflows/main.yml/badge.svg)](https://github.com/s50600822/jmh_tut/actions)
 
 | Benchmark                                    | Mode  | Cnt | Score    | Error   | Units |
 |----------------------------------------------|-------|-----|----------|---------|-------|

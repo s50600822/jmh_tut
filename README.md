@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/s50600822/Notes/actions/workflows/main.yml/badge.svg)](https://github.com/s50600822/jmh_tut/actions)
+
 | Benchmark                                    | Mode  | Cnt | Score    | Error   | Units |
 |----------------------------------------------|-------|-----|----------|---------|-------|
 | MyBenchmark.testPointHashMap                 | thrpt | 25  | 2169.424 | ±20.832 | ops/s |

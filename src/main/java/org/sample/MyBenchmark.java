@@ -6,10 +6,6 @@ import java.util.HashSet;
 import java.util.Random;
 
 public class MyBenchmark {
-//    private final Random random = new Random();
-
-//    @Benchmark
-//    public void bs(){}
 
     @Benchmark
     public void testPointHashMap() {
@@ -46,5 +42,19 @@ public class MyBenchmark {
             WrongPoint point = new WrongPoint(random.nextInt(1000), random.nextInt(1000));
             pointSet.add(point);
         }
+    }
+
+    @Benchmark
+    public void midByDiv() {
+        int l = 0;
+        int r = 1000000000;
+        int midpoint = (l + r) / 2;
+    }
+
+    @Benchmark
+    public void midByBitshift() {
+        int l = 0;
+        int r = 1000000000;
+        int midpoint = (l + r) >> 1;
     }
 }

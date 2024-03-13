@@ -8,5 +8,11 @@
 | MyBenchmark.testWrongPointHashMapFixedSize   | thrpt | 25  | 4.422    | ±0.018  | ops/s |
 
 
+| Benchmark                           | Mode  | Cnt |        Score       |       Error       | Units |
+|------------------------------------|-------|-----|-------------------|-------------------|-------|
+| MyBenchmark.midByBitshift          | thrpt |  25 | 2692753077.446 ± | 24626724.827      | ops/s |
+| MyBenchmark.midByDiv               | thrpt |  25 | 2695484028.500 ± | 29897567.172      | ops/s |
+
+
 ###REF
 https://github.com/openjdk/jmh

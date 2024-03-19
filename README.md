@@ -16,8 +16,8 @@
 
 | Benchmark                            | Mode | Cnt |       Score      |      Error      | Units |
 |--------------------------------------|------|-----|------------------|-----------------|-------|
-| MyBenchmark.ThreeSumAbstractList     | thrpt| 25  | 8242417.279 ± 61156.864| ops/s |
-| MyBenchmark.ThreeSumList             | thrpt| 25  | 1059.062 ± 2.167      | ops/s |
+| MyBenchmark.ThreeSumAbstractList     | thrpt| 25  | 8242417.279      |± 61156.864      | ops/s |
+| MyBenchmark.ThreeSumList             | thrpt| 25  | 1059.062         |± 2.167          | ops/s |
 
 
 

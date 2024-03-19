@@ -14,5 +14,12 @@
 | MyBenchmark.midByDiv               | thrpt |  25 | 2695484028.500 ± | 29897567.172      | ops/s |
 
 
+| Benchmark                            | Mode | Cnt |       Score      |      Error      | Units |
+|--------------------------------------|------|-----|------------------|-----------------|-------|
+| MyBenchmark.ThreeSumAbstractList     | thrpt| 25  | 8242417.279 ± 61156.864| ops/s |
+| MyBenchmark.ThreeSumList             | thrpt| 25  | 1059.062 ± 2.167      | ops/s |
+
+
+
 ###REF
 https://github.com/openjdk/jmh

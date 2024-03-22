@@ -1,11 +1,10 @@
 package org.sample;
 
-import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.*;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
+@State(Scope.Benchmark)
 public class MyBenchmark {
 
     @Benchmark
@@ -72,4 +71,38 @@ public class MyBenchmark {
         int r = 1000000000;
         int midpoint = (l + r) >> 1;
     }
+
+    @Benchmark
+    public void getList() {
+        new ListCons().toList(someSet);
+    }
+
+    @Benchmark
+    public void getAsbList() {
+        new ListCons().toAbsList(someSet);
+    }
+
+    private static final int LIST_SIZE = 100;
+    private static final int NUM_LISTS = 1000000;
+    private Set<List<Integer>> someSet = new HashSet<>();
+    private void initializeSet() {
+        List<List<Integer>> generatedLists = new ArrayList<>(3);
+        int startingNumber = 1;
+
+        for (int i = 0; i < NUM_LISTS; i++) {
+            List<Integer> list = new ArrayList<>();
+            for (int j = 0; j < LIST_SIZE; j++) {
+                list.add(startingNumber + j);
+            }
+            generatedLists.add(list);
+            startingNumber++;
+        }
+
+        someSet.addAll(generatedLists);
+    }
+    @Setup(Level.Trial)
+    public void setup() {
+        initializeSet();
+    }
+
 }

@@ -28,7 +28,7 @@ public class ThreeSumList {
                     --r;
             }
         }
-        res = new ArrayList<List<Integer>>(tempRes);
+        res = new ArrayList<>(tempRes);
         return res;
     }
 }

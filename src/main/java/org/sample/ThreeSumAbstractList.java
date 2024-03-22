@@ -39,7 +39,7 @@ public class ThreeSumAbstractList {
                             --r;
                     }
                 }
-                res = new ArrayList<List<Integer>>(tempRes);
+                res = new ArrayList<>(tempRes);
             }
 
         };

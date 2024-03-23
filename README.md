@@ -3,8 +3,8 @@
 
 | Benchmark                                    | Mode  | Cnt  |        Score       |      Error       | Units  |
 |----------------------------------------------|-------|------|-------------------|------------------|--------|
-| MyBenchmark.getAsbList                      | thrpt | 25   | 2700939613.181    | 26500106.311     | ops/s  |
-| MyBenchmark.getList                         | thrpt | 25   |        13.591     |        0.870     | ops/s  |
+| MyBenchmark.getAsbList                      | thrpt | 25   | 2700939613.181    | ±26500106.311     | ops/s  |
+| MyBenchmark.getList                         | thrpt | 25   |        13.591     |        ±0.870     | ops/s  |
 
 | Benchmark                                    | Mode  | Cnt | Score    | Error   | Units |
 |----------------------------------------------|-------|-----|----------|---------|-------|

@@ -1,5 +1,11 @@
 [![Build Status](https://github.com/s50600822/jmh_tut/actions/workflows/main.yml/badge.svg)](https://github.com/s50600822/jmh_tut/actions)
 
+
+| Benchmark                                    | Mode  | Cnt  |        Score       |      Error       | Units  |
+|----------------------------------------------|-------|------|-------------------|------------------|--------|
+| MyBenchmark.getAsbList                      | thrpt | 25   | 2700939613.181    | 26500106.311     | ops/s  |
+| MyBenchmark.getList                         | thrpt | 25   |        13.591     |        0.870     | ops/s  |
+
 | Benchmark                                    | Mode  | Cnt | Score    | Error   | Units |
 |----------------------------------------------|-------|-----|----------|---------|-------|
 | MyBenchmark.testPointHashMap                 | thrpt | 25  | 2169.424 | ±20.832 | ops/s |
